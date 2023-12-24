@@ -1,0 +1,75 @@
+/* Estilo geral do corpo da página */
+body {
+  font: normal 1.2rem Arial;
+  background-color: rgb(101, 186, 255);
+}
+
+/* Estilo do cabeçalho centralizado com cor definida */
+header {
+  color: rgb(241, 237, 231);
+  text-align: center;
+}
+
+/* Estilo da seção principal com fundo, sombra e bordas arredondadas */
+section {
+  background-color: rgb(241, 237, 231);
+  border-radius: 0.9rem;
+  padding: 12px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.671);
+  max-width: 100%;
+}
+
+/* Estilo do conteúdo centralizado */
+div {
+}
+
+section div input {
+  margin-bottom: 5px;
+}
+
+.centrar_botao {
+  text-align: center;
+}
+
+/* Estilo do botão de verificação */
+input[type="button"] {
+  margin-top: 15px;
+  background-color: #13678a;
+  border-radius: 2px 2px 4px #888;
+  color: white;
+  cursor: pointer;
+  padding: 0.8rem;
+}
+
+/* Estilo do botão de verificação no hover */
+input[type="button"]:hover {
+  background-color: #9aeba3;
+  color: #012030;
+}
+
+/* Estilo do dropdown de seleção de sexo */
+#selecSex {
+  margin-top: 10px;
+}
+
+/* Estilizando as opções do select */
+#selecSex option {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Estilo do rodapé com cor, alinhamento central e estilo itálico */
+footer {
+  color: rgb(5, 4, 3);
+  text-align: center;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+/* Estilo da saudação com tamanho grande e cor branca */
+#saudacao {
+  font-size: 2.5rem;
+  color: white;
+}

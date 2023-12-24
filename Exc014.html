@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Definição do conjunto de caracteres e configuração da largura da tela -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Estilos CSS para formatação -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Título da página -->
+    <title>Verificador de Idade</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <h1 id="saudacao">Verificador de Idade</h1>
+    </header>
+
+    <!-- Seção principal -->
+    <main>
+      <section>
+        <!-- Div para entrada de dados de ano de nascimento -->
+        <div>
+          <label for="anoNasc">Ano de Nascimento: </label>
+          <input
+            type="number"
+            name="anoNasc"
+            id="anoNasc"
+            placeholder="Digite o ano nascimento..."
+            min="1900"
+          />
+          <br />
+          <!-- Dropdown para seleção de sexo -->
+          <label for="selecSex">Sexo: </label>
+          <select name="selecSex" id="selecSex">
+            <option value="sexMasc">Masculino</option>
+            <option value="sexFemi">Feminino</option>
+          </select>
+          <br />
+          <!-- Div para centralizar o botão de verificação -->
+          <div class="centrar_botao">
+            <!-- Botão para acionar a verificação -->
+            <input type="button" value="VERIFICAR" onclick="verificar()" />
+          </div>
+        </div>
+
+        <!-- Div para exibição da mensagem de orientação -->
+        <div id="msg">
+          <p>Preencha os dados acima para ver o resultado</p>
+        </div>
+      </section>
+
+      <!-- Seção para exibir o resultado final -->
+      <section id="resultadoFinal" style="display: none">
+        <div id="msgFim"></div>
+        <div id="imagemFinal"></div>
+        <div>
+          <!-- Botão para voltar -->
+          <input
+            type="button"
+            id="botaoVoltar"
+            value="VOLTAR"
+            onclick="voltar()"
+            style="display: none"
+          />
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <!-- Texto de direitos autorais com caractere de direitos autorais e nome -->
+      <p>&copy; Luiz Henrique</p>
+    </footer>
+
+    <!-- Script JavaScript para carregar dinamicamente o conteúdo -->
+    <script src="script.js"></script>
+  </body>
+</html>
